@@ -1,0 +1,7 @@
+en:
+  PLUGIN_LITE_SYNC:
+    git_repo_url: Base uri git repo
+    git_repo_port: SSH port of git repo (ex 22) 
+    git_ssh_key: SSH key
+    git_remote: Git remote uri
+    git_branch: Work branch

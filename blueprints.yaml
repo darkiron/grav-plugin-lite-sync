@@ -1,0 +1,47 @@
+name: Lite Sync
+version: 0.1.0
+description: git sync repo/prod
+icon: plug
+author:
+  name: vincent scharpen
+  email: darkiron90@gmail.com
+homepage: https://github.com/darkiron/grav-plugin-lite-sync
+demo: http://demo.yoursite.com
+keywords: grav, plugin, etc
+bugs: https://github.com/darkiron/grav-plugin-lite-sync/issues
+docs: https://github.com/darkiron/grav-plugin-lite-sync/blob/develop/README.md
+license: MIT
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: PLUGIN_ADMIN.PLUGIN_STATUS
+      highlight: 1
+      default: 0
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+    git_repo_url:
+      type: text
+      label: PLUGIN_LITE_SYNC.git_repo_url
+      help: PLUGIN_LITE_SYNC.git_repo_url_help
+    git_repo_port:
+      type: text
+      label: PLUGIN_LITE_SYNC.git_repo_port
+      help: PLUGIN_LITE_SYNC.git_repo_port_help
+    git_ssh_key:
+      type: textaera
+      label: PLUGIN_LITE_SYNC.git_ssh_key
+      help: PLUGIN_LITE_SYNC.git_ssh_key_help
+    git_remote:
+      type: text
+      label: PLUGIN_LITE_SYNC.git_remote
+      help: PLUGIN_LITE_SYNC.git_remote_help
+    git_branch:
+      type: text
+      label: PLUGIN_LITE_SYNC.git_branch
+      help: PLUGIN_LITE_SYNC.git_branch_help
