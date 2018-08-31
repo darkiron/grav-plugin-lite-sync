@@ -213,8 +213,9 @@ class LiteSyncPlugin extends Plugin
      */
     public function gitExec($cmd, &$output, &$result){
         chdir(realpath($this->basePath));
-        $git = "/usr/bin/git -c 'core.sshCommand=ssh -p 22022'";
-        var_dump($git.' '.$cmd);
+        //$git = "/usr/bin/git -c 'core.sshCommand=ssh -p port'";
+        $git = "/usr/bin/git ";
+        
         exec($git.' '.$cmd, $output, $result);
 
     }
