@@ -199,9 +199,6 @@ class LiteSyncPlugin extends Plugin
         $cmd .='" 2>&1';
         $this->gitExec($cmd, $out1, $res1);
 
-        var_dump($res1);
-        var_dump($out1);
-
         if(isset($res) && $res === 0){
             return true;
         }
@@ -215,7 +212,7 @@ class LiteSyncPlugin extends Plugin
         chdir(realpath($this->basePath));
         //$git = "/usr/bin/git -c 'core.sshCommand=ssh -p port'";
         $git = "/usr/bin/git ";
-        
+
         exec($git.' '.$cmd, $output, $result);
 
     }
